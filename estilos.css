@@ -1,0 +1,60 @@
+.cuerpo{
+    background-image: url("https://images.hdqwalls.com/download/gun-n-roses-qhd-1366x768.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#op{
+    margin-top: 1.5rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.numero1{
+    background: transparent;
+    color: whitesmoke;
+    border-image:linear-gradient(125deg, rgba(10,6,12,0.8036006638983718) 0%, rgba(61,48,48,0.4954774145986519) 50%, rgba(42,5,7,0.8007995434501926) 100%)1;
+}
+.numero2{
+    background: transparent;
+    color: whitesmoke;
+    border-image: linear-gradient(125deg, rgba(10,6,12,0.8036006638983718) 0%, rgba(61,48,48,0.4954774145986519) 50%, rgba(42,5,7,0.8007995434501926) 100%)1;
+}
+
+#op{
+    background: rgb(28,26,29);
+    background: linear-gradient(125deg, rgba(28,26,29,0.5851132689403886) 0%, rgba(35,33,33,0.4506594874277836) 50%, rgba(16,10,11,0.14533735857624297) 100%);
+    color:slategrey;
+}
+
+#resultado{
+    margin-bottom: 3rem;
+    background: rgb(28,26,29);
+    background: linear-gradient(125deg, rgba(28,26,29,0.5851132689403886) 0%, rgba(35,33,33,0.4506594874277836) 50%, rgba(16,10,11,0.14533735857624297) 100%);
+    color: antiquewhite;
+    border-color: darkgrey;
+}
+#resultado:hover{
+    transform: translateY(-5px);
+    transform: scale(1.10);
+    transition: 0.5s;
+    
+}
+
+.calc{
+    background: rgb(88,148,255);
+background: linear-gradient(125deg, rgba(88,148,255,0.2629844173997724) 50%, rgba(80,35,182,0.8708275546546744) 100%);
+    border-radius: 2.5rem;
+}
+
+#r2{
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 1rem;
+    background:silver;
+    color: black;
+    margin-bottom: 2rem;
+}

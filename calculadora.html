@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body class="cuerpo">
+    
+    <div class="container w-50 vh-100 caja">
+        <div class="calc">
+
+            <div class="col"></div>
+            <div class="col-12 py-5 text-center"><h1 class="text-light">Calculator</h1></div>
+            <div class="col"></div>
+            
+            <div class="row">
+                <div class="col text-center">
+                    <h3 class="col-10 ms-4 ps-5 text-light">Digíte los números que desea y seleccione la operación que necesite</h3>
+                    <input type="number" placeholder="n1" class="numero1 me-5 mt-3">
+                    <input type="number" placeholder="n2" class="numero2 ms-5">
+                    <br>
+                    
+                    <select name="operation" id="op">
+                        <option class="valor" value="+">+</option>
+                        <option class="valor" value="-">-</option>
+                        <option class="valor" value="/">/</option>
+                        <option class="valor" value="*">*</option>
+                        <option class="valor" value="^">^</option>
+                    </select>
+                    <br>
+                    
+                    <button id="resultado">Ver resultado</button>
+                    <br>
+                    <output id="r2"></output> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        function suma(num1,num2) {
+            return num1+num2
+        }
+        function resta(num1,num2) {
+            return num1-num2
+        }
+        function multiplicacion(num1,num2) {
+            return num1*num2
+        }
+        function divición(num1,num2) {
+            return num1/num2
+        }
+        function elevar(num1,num2) {
+            return num1**num2
+        }
+
+        document.querySelector('#resultado').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('.numero1').value);
+        const n2 = parseInt(document.querySelector('.numero2').value);
+        const solucion = document.querySelector('#op').value;
+        let r;
+        if(solucion == '+'){
+            r = suma(n1,n2);
+        }else if( solucion == '-'){
+            r = resta(n1,n2);
+        }else if(solucion == '*'){
+            r = multiplicacion(n1,n2);
+        }else if(solucion == '/'){
+            r = divición(n1,n2);
+        }else if (solucion == '^'){
+            r = elevar(n1,n2)};
+        
+        document.querySelector('#r2').innerHTML = r;
+    });
+    </script>
+</body>
+</html>
